@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="utf-8">
+		<title>Exercicio 1,2</title>
+	</head>
+	
+	<body>
+		<form action="ex_1.html" method="post">
+            <p>Introduzir dados de login</p>
+			<fieldset>
+				<legend>Dados Pessoais:</legend>
+				<label>Email:</label><br/>
+				<input name="email" type="email"><br/>
+				<label>Password:</label><br/>
+				<input name="password" type="password"><br/>
+			</fieldset>
+            <fieldset>
+				<legend>Feedback</legend>
+				<label>Secção:</label><br/>
+				<select>
+					 <option value="Produtos">Ontem</option>
+					 <option value="Promoções">Hoje</option>
+					 <option value="Serviços">Amanhã</option>
+					 <option value="Lojas">Depois</option>
+				</select>
+				<br/>
+				<br/>
+				<label>Quantas vezes se deparou com o problema? </label><br/>
+				
+				<input type="checkbox" name="vezes1" value="Bike">Apenas umas vez<br/>
+				<input type="checkbox" name="vezes2" value="Car">Duas a cinco vezes<br/>
+				<input type="checkbox" name="vezes3" value="Public" checked>Mais do que cinco vezes<br/> 
+				<br/>
+				<label>Já nos enviou feedback sobre este assunto hoje?</label><br/>
+				<input type="radio" name="tempo" value="pouco"> Sim, hoje.<br/>
+				<input type="radio" name="tempo" value="muito"> Sim, mas não hoje. <br/>
+                <br/>
+                <label>Por favor, descreva o problema:</label><br/>
+				<textarea name="Comentário"></textarea><br/>
+				<br/>
+				<button type="button">Info</button>
+				<button type="reset">Limpar</button>
+				<button type="sumbit">Enviar</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
+</html>

@@ -1,0 +1,58 @@
+/* Estilo base para todos os botões */
+.btn-custom {
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão ao passar por cima */
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição suave */
+}
+
+/* Botão com fundo azul */
+.btn-blue {
+    background-color: #007BFF; /* Azul */
+    color: white; /* Texto branco */
+}
+
+.btn-blue:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar por cima */
+}
+
+/* Botão com fundo verde */
+.btn-green {
+    background-color: #28a745; /* Verde */
+    color: white; /* Texto branco */
+}
+
+.btn-green:hover {
+    background-color: #218838; /* Verde mais escuro ao passar por cima */
+}
+
+/* Botão com fundo vermelho */
+.btn-red {
+    background-color: #dc3545; /* Vermelho */
+    color: white; /* Texto branco */
+}
+
+.btn-red:hover {
+    background-color: #c82333; /* Vermelho mais escuro ao passar por cima */
+}
+
+/* Botão com fundo amarelo */
+.btn-yellow {
+    background-color: #ffc107; /* Amarelo */
+    color: black; /* Texto preto */
+}
+
+.btn-yellow:hover {
+    background-color: #e0a800; /* Amarelo mais escuro ao passar por cima */
+}
+
+/* Botão com fundo cinza */
+.btn-gray {
+    background-color: #6c757d; /* Cinza */
+    color: white; /* Texto branco */
+}
+
+.btn-gray:hover {
+    background-color: #5a6268; /* Cinza mais escuro ao passar por cima */
+}

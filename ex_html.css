@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+header {
+    background-color: #add8e6;
+    border-radius: 5px;
+    border: 1px solid #00008b;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #add8e6;
+    border-radius: 5px;
+    border: 1px solid #0000ff;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+section {
+    background-color: #add8e6;
+    border-radius: 5px;
+    border: 1px solid #00008b;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+div {
+    background-color: #d2f4ff;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #00008b;
+
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}

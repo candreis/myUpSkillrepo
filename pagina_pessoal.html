@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carlos's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link para Font Awesome -->
+    <style>
+        body {
+            padding-top: 56px;
+            /* Espaço para o navbar fixo */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #004285;
+            padding: 10px 0;
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            /* Cor padrão dos ícones */
+        }
+
+        .social-icons a:hover {
+            color: #ffffff;
+            /* Cor ao passar o rato */
+        }
+
+        .custom-navbar {
+            background-color: #004285;
+            /* Cor personalizada para a navbar */
+            color: #ffffff;
+            /* Cor do texto na navbar */
+        }
+
+        .custom-spacing {
+            margin-top: 40px;
+            /* Ajuste o valor conforme necessário */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar fixa -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Carlos's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">Este é o meu Portefólio!</h1>
+        <p>Aqui estão alguns dos meus projetos mais recentes.</p>
+
+        <section id="projects" class="mb-5 custom-spacing"> <!-- Usando classe personalizada -->
+            <h2 class="mb-3 text-center">Projetos Recentes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Projeto 1</h5>
+                    <img src="https://via.placeholder.com/300" alt="Projeto 1" class="portfolio-image">
+                    <p>Descrição breve do projeto 1.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Projeto 2</h5>
+                    <img src="https://via.placeholder.com/300" alt="Projeto 2" class="portfolio-image">
+                    <p>Descrição breve do projeto 2.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Projeto 3</h5>
+                    <img src="https://via.placeholder.com/300" alt="Projeto 3" class="portfolio-image">
+                    <p>Descrição breve do projeto 3.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="mb-5 mt-7"> <!-- Adicione mt-4 aqui -->
+            <h2 class="mb-3 text-center">Projetos Anteriores</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Projeto 4</h5>
+                    <img src="https://via.placeholder.com/300" alt="Projeto 4" class="portfolio-image">
+                    <p>Descrição breve do projeto 4.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Projeto 5</h5>
+                    <img src="https://via.placeholder.com/300" alt="Projeto 5" class="portfolio-image">
+                    <p>Descrição breve do projeto 5.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Projeto 6</h5>
+                    <img src="https://via.placeholder.com/300" alt="Projeto 6" class="portfolio-image">
+                    <p>Descrição breve do projeto 6.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <h2 class="mb-3">Para contactar-me:</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Insira o seu nome">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Insira o seu email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem:</label>
+                    <textarea class="form-control" id="message" rows="4"
+                        placeholder="Escreva a sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer fixo -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 Carlos Soares Reis. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.whatsapp.com" target="_blank" title="Whatsapp"><i
+                        class="fab fa-whatsapp-square fa-2x"></i></a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram"><i
+                        class="fab fa-instagram-square fa-2x"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://www.github.com" target="_blank" title="GitHub"><i
+                        class="fab fa-github-square fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

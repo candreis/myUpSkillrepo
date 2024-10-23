@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <!-- Visor da calculadora -->
+        <input type="text" class="visor" value="0" disabled>
+
+        <!-- Teclas da calculadora -->
+        <div class="teclas">
+            <!-- Números 7, 8, 9, operador ÷ -->
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
+            <button type="button" class="operador" value="/">÷</button>
+
+            <!-- Números 4, 5, 6, operador × -->
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+            <button type="button" class="operador" value="*">&times;</button>
+
+            <!-- Números 1, 2, 3, operador - -->
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+            <button type="button" class="operador" value="-">-</button>
+
+            <!-- Botões: 0, decimal, AC, operador + -->
+            <button type="button" value="0">0</button>
+            <button type="button" class="decimal" value=".">.</button>
+            <button type="button" class="limpar" value="limpar">AC</button>
+            <button type="button" class="operador" value="+">+</button>
+
+            <!-- Botão igual = -->
+            <button type="button" class="igual" value="=">=</button>
+        </div>
+    </div>
+
+    <script>
+        // Script básico para funcionalidade da calculadora
+        const visor = document.querySelector('.visor');
+        const teclas = document.querySelectorAll('.teclas button');
+        let visorValue = '0';
+        let operador = '';
+        let valorAnterior = '';
+
+        teclas.forEach(tecla => {
+            tecla.addEventListener('click', () => {
+                const valorTecla = tecla.value;
+
+                // Limpar visor
+                if (valorTecla === 'limpar') {
+                    visorValue = '0';
+                    operador = '';
+                    valorAnterior = '';
+                    visor.value = visorValue;
+                    return;
+                }
+
+                // Verificar se é um operador
+                if (['+', '-', '*', '/'].includes(valorTecla)) {
+                    operador = valorTecla;
+                    valorAnterior = visorValue;
+                    visorValue = '0';
+                    return;
+                }
+
+                // Verificar se é o sinal de igual
+                if (valorTecla === '=') {
+                    if (valorAnterior && operador) {
+                        visorValue = eval(`${valorAnterior} ${operador} ${visorValue}`);
+                        visor.value = visorValue;
+                        operador = '';
+                        valorAnterior = '';
+                    }
+                    return;
+                }
+
+                // Atualizar visor para números e decimal
+                if (valorTecla === '.' && visorValue.includes('.')) return;
+                if (visorValue === '0' && valorTecla !== '.') {
+                    visorValue = valorTecla;
+                } else {
+                    visorValue += valorTecla;
+                }
+                visor.value = visorValue;
+            });
+        });
+    </script>
+    <script src="calculator.js" type="text/javascript"></script>
+</body>
+</html>

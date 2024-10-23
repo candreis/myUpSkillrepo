@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURSO</title>
+</head>
+<body>
+<header>
+	<h1>Descrição do curso>h1>
+	<h2>Programação Web</h2>
+<nav
+	https://www.w3schools.com/html/
+	https://www.w3schools.com/css/
+	https://www.w3schools.com/js/
+section
+	Objetivos e Conteúdos
+	article
+		Objetivos da aprendisagem
+			Elaborar projetos web, aplicando metodologia/Processo de desenvolvimento de software, desde a fase de análise de requisitos, até a publicação da aplicação web.
+			Programar aplicações web usando HTML5, CSS3 e JavaScript 5 fazendo uso de armazenamento local, processamento assíncrono e redireccionamento no servidor (através de PHP/Node.js) para web services existentes.
+			Inferir, através da experimentação e avaliação crítica, na importância das frameworks e APIs JavaScript e CSS, no desenvolvimento de aplicações web. 
+		top.png
+	article
+		Conteúdos Programáticos
+			Linguagens Web
+				Front-end vs Back-end
+				Frameworks Web
+			Front-End
+				Revisões e Boas práticas HTML5/CSS3
+				JavaScript
+					ECMAScript vs. JavaScript
+					Sintaxe básica, Funções e Vetores
+					Document Object Model (DOM)
+					Funções Anónimas e padrão de módulos
+					Comunicação cliente-servidor
+			Back-End
+				Servidor Web
+					Model-View-Controller (MVC)
+					Camada do servidor Web
+					Node.js
+					Framework Express
+				Formatos de dados Estruturados e Base de dados
+				Serviços na Web
+					Paradigma CRUD (create, read, update, delete)
+					Web Services
+					introdução Arquitetura API/REST 
+		top.png
+section
+	Bibliografia
+	article
+		Recomendada
+			Autor(es)
+			Ano
+			Título
+			Edição/editora
+			ISBN
+			Capa
+
+			Portela, Filipe; Queirós, Ricardo
+			(2018)
+			Introdução ao desenvolvimento moderno para a Web
+			1.ª edição, FCA, Lisboa
+			978-972-722-897-3
+			https://www.fca.pt/pt/catalogo/informatica/tecnologias-programacao-web/introducao-ao-desenvolvimento-moderno-para-a-web/
+			https://www.fca.pt/fotos/produtos/d_9789727228973_capa_introdu_o_ao_desenvolvimento_moderno_para_a_web.jpg
+
+			Pereira, Alexandre; Poupa, Carlos
+			(2017)
+			Linguagens Web
+			6ª Edição Revista e Atualizada); Edições Sílabo
+			https://www.wook.pt/livro/linguagens-web-alexandre-pereira/20286214
+			https://img.wook.pt/images/linguagens-web-alexandre-pereira/MXwyMDI4NjIxNHwxNjEzNzc0MnwxNTA2NDY2ODAwMDAw/502x
+
+			Abreu, Luis
+			(2016)
+			NODE.JS- CONSTRUÇÃO DE APLICAÇÕES WEB
+			FCA, Lisboa
+			978-972-722-860-7
+			https://www.fca.pt/pt/catalogo/informatica/tecnologias-programacao-web/node-js/
+			https://www.fca.pt/fotos/produtos/9789727228607_node.js-construcao_de_aplicacoes_web_952427221582eef240f828.jpg
+	article
+		Complementar
+			Autor(es)
+			Ano
+			Título
+			Edição/editora
+			ISBN
+			Capa
+
+			Abreu, Luís
+			(2015)
+			HTML5
+			4a edição; FCA, Lisboa
+			978-972-722-821-8
+			https://www.fca.pt/pt/catalogo/informatica/tecnologias-programacao-web/html5/
+			https://www.fca.pt/fotos/produtos/d_9789727227396_html5_2ed_a_a.jpg
+
+			Remoaldo, Pedro
+			(2011)
+			CSS3
+			FCA, Lisboa
+			978-972-722-731-0
+			https://www.fca.pt/pt/catalogo/informatica/tecnologias-programacao-web/css3/
+			https://www.fca.pt/fotos/produtos/d_9789727227310_css3-myti.jpg
+
+			Abreu, Luis
+			(2015)
+			JAVASCRIPT 6
+			FCA, Lisboa
+			978-972-722-815-7
+			https://www.fca.pt/pt/catalogo/informatica/tecnologias-programacao-web/javascript-6/
+			https://www.fca.pt/fotos/produtos/d_9789727228157_javascript_6.jpg
+	article
+		Webgrafia
+			http://www.w3.org/TR/html5/
+			HTML5 specification, W3C Candidate Recommendation 6 August 2013
+			http://www.w3.org/Style/CSS/
+			CSS standards and drafts
+			http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
+			ECMAScript specification, Standard ECMA-262
+			https://developer.mozilla.org/pt-PT/
+			Mozilla Developer Network

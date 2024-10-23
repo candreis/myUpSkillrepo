@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercício 1,2</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		/* Estilo base para todos os botões */
+		.btn-custom {
+			padding: 10px 20px;
+			/* Espaçamento interno */
+			border: none;
+			/* Sem borda */
+			border-radius: 5px;
+			/* Bordas arredondadas */
+			cursor: pointer;
+			/* Cursor em forma de mão ao passar por cima */
+			transition: background-color 0.3s, color 0.3s;
+			/* Efeito de transição suave */
+		}
+
+		/* Botão com fundo azul */
+		.btn-blue {
+			background-color: #007BFF;
+			/* Azul */
+			color: white;
+		}
+
+		.btn-blue:hover {
+			background-color: #0056b3;
+			/* Azul mais escuro ao passar por cima */
+			color: white;
+			font-weight: bold;
+		}
+
+		/* Botão com fundo verde */
+		.btn-green {
+			background-color: #28a745;
+			/* Verde */
+			color: white;
+		}
+
+		.btn-green:hover {
+			background-color: #218838;
+			/* Verde mais escuro ao passar por cima */
+			color: white;
+			font-weight: bold;
+		}
+
+		}
+
+		/* Botão com fundo cinza */
+		.btn-yellow {
+			background-color: #b9cccc;
+			/* Amarelo */
+			color: black;
+			/* Texto preto */
+		}
+
+		.btn-yellow:hover {
+			background-color: #e0a800;
+			/* Amarelo mais escuro ao passar por cima */
+			font-weight: bold;
+		}
+
+		/* Botão com fundo cinza */
+		.btn-gray {
+			background-color: #bdc3c9;
+			/* Cinza */
+			color: white;
+		}
+
+		.btn-gray:hover {
+			background-color: #5a6268;
+			/* Cinza mais escuro ao passar por cima */
+			color: white;
+			font-weight: bold;
+		}
+
+		.indent {
+			margin-left: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container mt-4">
+		<h2 class="mb-3">Introduzir dados de login</h2>
+		<form action="ex_1.html" method="post">
+			<!-- Dados Pessoais -->
+			<fieldset class="mb-4">
+				<legend>Dados Pessoais:</legend>
+				<div class="mb-3">
+					<label for="email" class="form-label">Email:</label>
+					<input name="email" type="email" class="form-control" id="email" placeholder="Insira o seu email">
+				</div>
+				<div class="mb-3">
+					<label for="password" class="form-label">Password:</label>
+					<input name="password" type="password" class="form-control" id="password"
+						placeholder="Insira a sua password">
+				</div>
+			</fieldset>
+
+			<!-- Feedback -->
+			<fieldset class="mb-4">
+				<legend>Feedback</legend>
+				<div class="mb-3">
+					<label for="secao" class="form-label">Quando?</label>
+					<select id="secao" class="form-select">
+						<option value="Ontem">Ontem</option>
+						<option value="Hoje">Hoje</option>
+						<option value="Amanha">Amanhã</option>
+						<option value="Depois">Depois</option>
+					</select>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label">Quantas vezes se deparou com o problema?</label><br>
+					<div class="indent">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="umaVez" id="umaVez" value="Uma">
+							<label class="form-check-label" for="umaVez">Apenas uma vez</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="duasCinco" id="duasCinco"
+								value="DuasCinco">
+							<label class="form-check-label" for="duasCinco">Duas a cinco vezes</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="maisCinco" id="maisCinco"
+								value="MaisCinco">
+							<label class="form-check-label" for="maisCinco">Mais do que cinco vezes</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label">Já nos enviou feedback sobre este assunto hoje?</label><br>
+					<div class="indent">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="tempo" id="tempo1" value="pouco">
+							<label class="form-check-label" for="tempo1">Sim, hoje.</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="tempo" id="tempo2" value="muito">
+							<label class="form-check-label" for="tempo2">Sim, mas não hoje.</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="mb-3">
+					<label for="comentario" class="form-label">Por favor, descreva o problema:</label>
+					<textarea name="Comentario" class="form-control" id="comentario" rows="4"
+						placeholder="Descreva aqui o problema..."></textarea>
+				</div>
+
+				<div class="mb-3">
+					<button type="button" class="btn btn-custom btn-blue">Info</button>
+					<button type="reset" class="btn btn-custom btn-gray">Limpar</button>
+					<button type="submit" class="btn btn-custom btn-green">Enviar</button>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

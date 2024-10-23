@@ -1,0 +1,116 @@
+/* Estilo geral para o corpo da página */
+body {
+    font-family: Helvetica; /* Fonte padrão */
+    font-weight: 100;
+    background-color: #f0f0f0; /* Cor de fundo clara */
+    margin: 0; /* Remove margens padrão */
+    padding: 30px; /* Espaçamento interno */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #add8e6; /* Fundo azul claro */
+    border-radius: 5px; /* Bordas redondas */
+    padding: 10px; /* Espaçamento interno */
+    text-align: left; /* Centralizar o texto */
+    border: 1px solid #00008b; /* Borda azul escura */
+    margin-bottom: 10px; /* Espaçamento abaixo do cabeçalho */
+}
+
+/* Estilo da barra de navegação */
+nav {
+    background-color: #e6f7ff; /* Fundo azul muito claro */
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+    border: 1px solid #00008b;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    word-spacing: -60px;
+    text-indent: 10;
+    
+}
+
+nav a {
+    margin: 0 15px;
+    color: #00008b; /* Cor das letras azul escura */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: normal;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Sublinha ao passar o rato */
+}
+
+/* Estilo da seção Objetivos e Conteúdos */
+.objetivos-conteudos {
+    background-color: #add8e6; /* Fundo azul claro */
+    color: #00008b; /* Letras azuis escuras */
+    border: 1px solid #00008b; /* Borda azul escura */
+    border-radius: 5px; /* Bordas redondas */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento abaixo da seção */
+    line-height: 1.3;
+}
+
+.objetivos, .conteudos {
+    background-color: #ddf7ff; /* Fundo azul claro */
+    color: #00008b; /* Letras azuis escuras */
+    border: 0.5px solid #00008b; /* Borda fina azul escura */
+    border-radius: 5px; /* Bordas redondas */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento abaixo de cada secção */
+    line-height: 1.5;
+}
+
+/* Estilo dos títulos */
+h1, h2, h3, h4 {
+    color: #00008b; /* Letras azuis escuras */
+    text-transform: capitalize; /* Letras maiúsculas */
+    font-weight: normal;
+}
+
+/* Estilo das tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsa as bordas */
+    margin-bottom: 10px; /* Espaçamento abaixo da tabela */
+    border-collapse: separate; /* Mantém as células separadas */
+    border-spacing: 3px;
+    border-bottom: 1px solid #00008b;
+}
+
+table, th, td {
+    border: 1px solid #00008b; /* Borda azul escura */
+    padding: 8px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento à esquerda */
+    border: none; /* Remove as bordas das células */
+    padding: 10px;
+    border-bottom: 0.3px solid #00008b;
+    
+}
+
+th {
+    background-color: #add8e6; /* Fundo azul claro para cabeçalhos */
+    color: #00008b; /* Letras azuis escuras */
+}
+
+/* Estilo para imagens */
+img {
+    border: 1px solid #00008b; /* Borda fina azul escura */
+    border-radius: 5px; /* Bordas ligeiramente arredondadas */
+}
+
+/* Estilo para links */
+a {
+    color: #00008b; /* Cor dos links azul escura */
+    text-decoration: none; /* Remove sublinhado dos links */
+    text-decoration: underline;
+    font-size: 15px;
+    padding: 20px; /* Espaçamento interno */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha os links ao passar o rato */
+}
