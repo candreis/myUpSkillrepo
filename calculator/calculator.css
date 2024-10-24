@@ -1,0 +1,90 @@
+/* 1. Estilos iniciais */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* 3. Estilos para as classes */
+.calculadora {
+    border: 1px solid #000; /* Bordo fina preta */
+    border-radius: 5px; /* Borda arredondada */
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centragem */
+    width: 400px; /* Largura */
+    background-color: #f8f8f8; /* Cor de fundo da calculadora */
+}
+
+
+.visor {
+    width: 100%; /* largura */
+    font-size: 5rem; /* tamanho da letra */
+    height: 80px; /* altura */
+    border: none; /* sem linha de fronteira */
+    background-color: #252525; /* cor de fundo */
+    color: #fff; /* cor do texto */
+    text-align: right; /* alinhamento do texto */
+    padding-right: 20px; /* espaço à direita */
+    padding-left: 10px; /* espaço à esquerda */
+}
+
+.operador {
+    color: #337cac; /* cor */
+}
+
+.limpar {
+    background-color: #f0595f; /* cor de fundo */
+    border-color: #b0353a; /* cor da linha de fronteira */
+    color: #fff; /* cor do texto */
+}
+
+.igual {
+    background-color: #2e86c0; /* cor de fundo */
+    border-color: #337cac; /* cor da linha de fronteira */
+    color: #fff; /* cor do texto */
+    height: 100%; /* altura */
+    grid-area: 2 / 4 / 6 / 5; /* zonas da grid que ocupa */
+}
+
+.teclas {
+    display: grid; /* definir que é para dispor em grid */
+    grid-template-columns: repeat(4, 1fr); /* definir 4 colunas */
+    grid-gap: 20px; /* espaço entre colunas */
+    padding: 20px; /* espaçamento */
+}
+
+/* 4. Estilos para botões */
+button {
+    height: 60px; /* altura */
+    background-color: #fff; /* cor de fundo */
+    border-radius: 3px; /* borda arredondada */
+    border: 1px solid #c4c4c4; /* linha de fronteira */
+    font-size: 2rem; /* tamanho da letra */
+    color: #333; /* cor do texto */
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,.04)); /* gradiente */
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), 
+                inset 0 1px 0 0 rgba(255,255,255,.45), 
+                inset 0 -1px 0 0 rgba(255,255,255,.15), 
+                0 1px 0 0 rgba(255,255,255,.15); /* sombra */
+    text-shadow: 0 1px rgba(255,255,255,.4); /* sombra do texto */
+}
+
+/* 5. Comportamentos ao passar por cima (hover) */
+button:hover {
+    background-color: #eaeaea; /* botão geral */
+}
+
+.limpar:hover {
+    background-color: #f17377; /* botão de limpar */
+}
+
+.igual:hover {
+    background-color: #4e9ed4; /* botão igual */
+}
